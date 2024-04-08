@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="" style={{ width: "120px" }} /> {/* Adjust the width to make the logo smaller */}
       </div>
       <div className="navbar-links-container">
         {/* Use Link component for routing */}

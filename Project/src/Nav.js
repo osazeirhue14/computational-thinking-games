@@ -7,6 +7,7 @@ import Testimonial from "./Components/HomePage/Testimonial";
 import Contact from "./Components/HomePage/Contact";
 import Footer from "./Components/HomePage/Footer";
 import LightsOn from "./Components/LightsOn/LightsOn"; 
+import LightsOnLevel1 from "./Components/LightsOn/LightsOnLevel1";
 
 const Nav = () => {
   return (
@@ -27,6 +28,7 @@ const Nav = () => {
       <Route path="/about" element={<About />} />
       <Route path="/games" element={<Games />} />
       <Route path="/LightsOn" element={<LightsOn />} />
+      <Route path="/LightsOnLevel1" element={<LightsOnLevel1 />} />
       <Route path="/testimonial" element={<Testimonial />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>

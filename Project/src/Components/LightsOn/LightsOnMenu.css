@@ -1,0 +1,24 @@
+.lights-on-menu {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .levels {
+    display: flex;
+    flex-direction: column; /* Display levels vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px;
+  }
+  
+  .level-button {
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Add space between buttons */
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .level-button:hover {
+    background-color: #f0f0f0;
+  }
+  
