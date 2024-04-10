@@ -7,7 +7,6 @@ const Games = () => {
     {
       image: BeaverPic,
       title: "Lights On",
-      text: "Great Game very fun to play enjoy.",
     },
     {
       image: BeaverPic,

@@ -24,7 +24,7 @@ const Navbar = () => {
     },
     {
       text: "About Us",
-      route: "/about", // Define the route for About Us
+      route: "/AboutUs", // Define the route for About Us
     },
     {
       text: "Reviews",
@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className="navbar-links-container">
         {/* Use Link component for routing */}
         <Link to="/" className="navbar-link">Home Page</Link>
-        <Link to="/about" className="navbar-link">About Us</Link>
+        <Link to="/about-us" className="navbar-link">About Us</Link>
         <Link to="/reviews" className="navbar-link">Reviews</Link>
         <Link to="/games" className="navbar-link">Games</Link>
         <Link to="/leaderboards" className="navbar-link">Leaderboards</Link>
