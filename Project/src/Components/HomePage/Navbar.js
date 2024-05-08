@@ -13,6 +13,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { useNavigate } from "react-router-dom";
+import Login from "./Login.js";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -37,6 +39,7 @@ const Navbar = () => {
       route: "/contact", // Define the route for Contact
     },
   ];
+  const navigate = useNavigate();
 
   return (
     <nav>
@@ -50,7 +53,7 @@ const Navbar = () => {
         <Link to="/reviews" className="navbar-link">Reviews</Link>
         <Link to="/games" className="navbar-link">Games</Link>
         <Link to="/leaderboards" className="navbar-link">Leaderboards</Link>
-        <button className="primary-button">Sign In/Register</button>
+        <button className="primary-button" onclick={()=> navigate('Login')}>Sign In/Register</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

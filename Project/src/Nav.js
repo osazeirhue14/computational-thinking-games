@@ -10,7 +10,7 @@ import Footer from "./Components/HomePage/Footer";
 import LightsOn from "./Components/LightsOn/LightsOn"; 
 import LightsOnLevel1 from "./Components/LightsOn/LightsOnLevel1";
 import AboutUs from "./Components/AboutUs/AboutUs";
-import Login from "./Login"
+import Login from "./Login1";
 import Register from "./Register"
 
 const Nav = () => {
@@ -53,6 +53,8 @@ const Nav = () => {
       <Route path="/LightsOnLevel1" element={<LightsOnLevel1 />} />
       <Route path="/testimonial" element={<Testimonial />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="Login" element={<Login />} />
+     
       {/*
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
