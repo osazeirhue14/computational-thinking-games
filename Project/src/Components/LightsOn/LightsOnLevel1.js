@@ -5,14 +5,16 @@ import OnSvg from '../../Assets/On1.svg';
 import SquareSvg from '../../Assets/Square.svg';
 import TriangleSvg from '../../Assets/Triangle.svg';
 import LightOffSvg from '../../Assets/LightOff.svg';
+import LightOnSvg from '../../Assets/LightOn.svg';
 import Line from './Line';
 
 
-const ToggleButton = ({ index }) => {
+const ToggleButton = ({ index, handleLightToggle }) => {
   const [isOn, setIsOn] = useState(false); // State to manage the toggle
 
   const handleClick = () => {
       setIsOn(!isOn); // Toggle the state on click
+      handleLightToggle(index, !isOn);
   };
 
   return (
@@ -31,15 +33,42 @@ const Shape = ({ type, className }) => {
 
 
 
-const LightBulb = () => {
+const LightBulb = ({ isOn }) => {
   return (
-    <img src={LightOffSvg} className="lightBulb" alt="Light Off" />
+    <img src={isOn ? LightOnSvg : LightOffSvg} className="lightBulb" alt={isOn ? "Light On" : "Light Off"} />
   );
 };
 
 
 
+
 const LightsOnLevel1 = () => {
+  const [lights, setLights] = useState([false, false, false, false, false, false, false, false]);
+  const [isLightOn, setIsLightOn] = useState(false);
+
+  const handleLightToggle = (index, isOn) => {
+    const updatedLights = [...lights];
+    updatedLights[index - 1] = isOn;
+    setLights(updatedLights);
+  };
+
+  const handleSubmission = () => {
+    if (
+      (lights[0] && lights[1] && lights[2] && !lights[3] && lights[4] && lights[5] && !lights[6] && !lights[7]) ||
+      (lights[0] && lights[1] && !lights[2] && lights[3] && lights[4] && lights[5] && !lights[6] && !lights[7]) ||
+      (lights[0] && lights[1] && lights[2] && !lights[3] && !lights[4] && !lights[5] && lights[6] && !lights[7]) ||
+      (lights[0] && lights[1] && lights[2] && !lights[3] && !lights[4] && !lights[5] && !lights[6] && lights[7]) ||
+      (lights[0] && lights[1] && !lights[2] && lights[3] && !lights[4] && !lights[5] && lights[6] && !lights[7]) ||
+      (lights[0] && lights[1] && !lights[2] && lights[3] && !lights[4] && !lights[5] && !lights[6] && lights[7])
+    ) {
+      setIsLightOn(true); 
+      alert("Congratulations! You've won!");
+    } else {
+      setIsLightOn(false); 
+      alert("Sorry, try again!");
+    }
+  };
+
   return (
     <div>
 
@@ -57,7 +86,7 @@ const LightsOnLevel1 = () => {
           (Click on the switches to place and remove beavers. Press 'Save' when you have finished.)
         </p>
       </div>
-      <svg className="linesContainer" width="500%" height="500%" style={{ position: 'absolute', top: 0, left: 0 }}>
+      <svg className="linesContainer" width="5000" height="5000">
           <Line startX={300} startY={500} endX={635} endY={500} className="line" />
           <Line startX={634} startY={500} endX={634} endY={600} className="line" />
           <Line startX={634} startY={600} endX={975} endY={600} className="line" />
@@ -78,9 +107,9 @@ const LightsOnLevel1 = () => {
         
       <div className="fixedContainer">
           {[1, 2, 3, 4, 5, 6, 7, 8].map(index => (
-              <ToggleButton key={index} index={index} />
+            <ToggleButton key={index} index={index} handleLightToggle={handleLightToggle} />
           ))}
-      </div>
+        </div>
       
       <Shape type="triangle" className="triangleShape" />
       <Shape type="square" className="squareShape" />
@@ -89,9 +118,9 @@ const LightsOnLevel1 = () => {
       <Shape type="triangle" className="triangleShape3" />
       <Shape type="square" className="squareShape3" />
       <Shape type="triangle" className="triangleShape4" />
-      <LightBulb/>
+      <LightBulb isOn={isLightOn}/>
       <div className="submitButtonContainer">
-        <button className="submitButton">Submit</button>
+            <button className="submitButton" onClick={handleSubmission}>Submit</button>
       </div>
       </div>
       </div>

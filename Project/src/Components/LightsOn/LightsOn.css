@@ -140,6 +140,8 @@
 
 .linesContainer {
   position: absolute; /* Set the position to absolute within the container */
+  top:0%;
+  left:0%;
 }
 
 .line {

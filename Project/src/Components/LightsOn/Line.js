@@ -1,10 +1,6 @@
 import React from 'react';
 
 const Line = ({ startX, startY, endX, endY, className }) => {
-  const lineStyle = {
-    strokeWidth: 2,
-    stroke: 'black',
-  };
 
   return (
     <line
@@ -13,7 +9,6 @@ const Line = ({ startX, startY, endX, endY, className }) => {
       x2={endX}
       y2={endY}
       className={className}
-      style={lineStyle}
     />
   );
 };
