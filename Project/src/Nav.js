@@ -9,6 +9,8 @@ import Contact from "./Components/HomePage/Contact";
 import Footer from "./Components/HomePage/Footer";
 import LightsOn from "./Components/LightsOn/LightsOn"; 
 import LightsOnLevel1 from "./Components/LightsOn/LightsOnLevel1";
+import LightsOnLevel2 from "./Components/LightsOn/LightsOnLevel2";
+import LightsOnLevel3 from "./Components/LightsOn/LightsOnLevel3";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Reviews from "./Components/Reviews/Reviews";
 import Login from "./Login1";
@@ -66,6 +68,26 @@ const Nav = () => {
           <>
             <NavBar />
             <LightsOnLevel1 />
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/LightsOnLevel2"
+        element={
+          <>
+            <NavBar />
+            <LightsOnLevel2 />
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/LightsOnLevel3"
+        element={
+          <>
+            <NavBar />
+            <LightsOnLevel3 />
             <Footer />
           </>
         }

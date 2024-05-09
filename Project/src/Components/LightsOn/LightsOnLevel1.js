@@ -83,24 +83,36 @@ const LightsOnLevel1 = () => {
           The friends win the game if they can turn the light on.<br/>
           Task:<br/>
           Select which buttons the beavers could stand on to turn on the light and win the game.<br/>
-          (Click on the switches to place and remove beavers. Press 'Save' when you have finished.)
+          (Click on the switches to place and remove beavers. Press 'Submit' when you have finished.)
         </p>
       </div>
-      <svg className="linesContainer" width="5000" height="5000">
-          <Line startX={300} startY={500} endX={635} endY={500} className="line" />
-          <Line startX={634} startY={500} endX={634} endY={600} className="line" />
-          <Line startX={634} startY={600} endX={975} endY={600} className="line" />
-          <Line startX={974} startY={600} endX={974} endY={700} className="line" />
-          <Line startX={974} startY={700} endX={1295} endY={700} className="line" />
-          <Line startX={1295} startY={700} endX={1295} endY={960} className="line" />
-          <Line startX={1295} startY={960} endX={1600} endY={960} className="line" />
-          <Line startX={300} startY={620} endX={635} endY={620} className="line" />
-          <Line startX={300} startY={750} endX={635} endY={750} className="line" />
-          <Line startX={634} startY={750} endX={634} endY={860} className="line" />
-          <Line startX={300} startY={850} endX={975} endY={850} className="line" />
-          <Line startX={974} startY={850} endX={974} endY={700} className="line" />
-          <Line startX={300} startY={990} endX={635} endY={990} className="line" />
-          <Line startX={300} startY={990} endX={635} endY={990} className="line" />
+      <svg className="linesContainer" width="250%" height="250%">
+          <Line startX={250} startY={500} endX={512} endY={500} className="line" />
+          <Line startX={512} startY={500} endX={512} endY={600} className="line" />
+          <Line startX={512} startY={600} endX={784} endY={600} className="line" />
+          <Line startX={784} startY={600} endX={784} endY={700} className="line" />
+          <Line startX={784} startY={700} endX={1040} endY={700} className="line" />
+          <Line startX={1040} startY={700} endX={1040} endY={960} className="line" />
+          <Line startX={1040} startY={960} endX={1300} endY={960} className="line" />
+          <Line startX={250} startY={620} endX={512} endY={620} className="line" />
+          <Line startX={250} startY={750} endX={512} endY={750} className="line" />
+          <Line startX={512} startY={750} endX={512} endY={850} className="line" />
+          <Line startX={250} startY={850} endX={784} endY={850} className="line" />
+          <Line startX={784} startY={850} endX={784} endY={700} className="line" />
+          <Line startX={250} startY={990} endX={512} endY={990} className="line" />
+          <Line startX={512} startY={990} endX={512} endY={1040} className="line" />
+          <Line startX={512} startY={1040} endX={780} endY={1040} className="line" />
+          <Line startX={780} startY={1040} endX={780} endY={1170} className="line" />
+          <Line startX={780} startY={1170} endX={1040} endY={1170} className="line" />
+          <Line startX={1040} startY={1170} endX={1040} endY={960} className="line" />
+          <Line startX={250} startY={1120} endX={512} endY={1120} className="line" />
+          <Line startX={512} startY={1120} endX={512} endY={1040} className="line" />
+          <Line startX={250} startY={1230} endX={512} endY={1230} className="line" />
+          <Line startX={512} startY={1230} endX={512} endY={1290} className="line" />
+          <Line startX={512} startY={1290} endX={780} endY={1290} className="line" />
+          <Line startX={780} startY={1290} endX={780} endY={1170} className="line" />
+          <Line startX={250} startY={1370} endX={512} endY={1370} className="line" />
+          <Line startX={512} startY={1370} endX={512} endY={1290} className="line" />
         </svg>
       <div className="gameContainer">
       

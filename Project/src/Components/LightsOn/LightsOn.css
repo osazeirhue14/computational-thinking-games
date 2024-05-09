@@ -2,10 +2,10 @@
   position: relative;
   top: 50%;
   left: -40%;
-  display: flex;           /* Makes children flex items */
-  flex-direction: column;  /* Align children vertically */
-  align-items: center;     /* Center items horizontally */
-  gap: 1px;               /* Space between each item */
+  display: flex;          
+  flex-direction: column;  
+  align-items: center;     
+  gap: 1px;              
 }
 /*
 .fixedContainer {
@@ -25,17 +25,17 @@
 
 
 .toggleButtonImg {
-  width: 100px; /* Set the width of the images */
-  height: 100px; /* Set the height of the images */
-  cursor: pointer; /* Change cursor to pointer on hover over the image */
-  display: block; /* Ensures that the image does not have inline properties */
+  width: 100px; 
+  height: 100px; 
+  cursor: pointer;
+  display: block; 
 }
 
 .triangleShape {
   width: 80px;
   height: 80px;
   position: absolute;
-  left: 28.45%;  /* Adjust this value as needed to position correctly */
+  left: 28.45%;  
   top: 12%;
 }
 
@@ -51,22 +51,22 @@
   width: 80px;
   height: 80px;
   position: absolute;
-  left: 28.5%;  /* Adjust this value as needed to position correctly */
-  top: 58%;   /* Adjust this value as needed to position correctly */
+  left: 28.5%;
+  top: 58%;  
 }
 
 .squareShape2 {
   width: 80px;
   height: 80px;
   position: absolute;
-  left: 28.3%;  /* Adjust this value as needed to position correctly */
+  left: 28.3%;  
   top: 83%;
 }
 .triangleShape3 {
   width: 80px;
   height: 80px;
   position: absolute;
-  left: 49.3%;  /* Adjust this value as needed to position correctly */
+  left: 49.3%;  
   top: 21%;
 }
 
@@ -74,7 +74,7 @@
   width: 80px;
   height: 80px;
   position: absolute;
-  left: 49%;  /* Adjust this value as needed to position correctly */
+  left: 49%;  
   top:70%;
 }
 
@@ -82,23 +82,23 @@
   width: 80px;
   height: 80px;
   position: absolute;
-  left: 68.95%;  /* Adjust this value as needed to position correctly */
+  left: 68.95%; 
   top: 48%;
 }
 
 
 .lightBulb {
-  width: 100px; /* Set width as needed */
-  height: 100px; /* Set height as needed */
+  width: 100px; 
+  height: 100px; 
   position: absolute;
-  left: 87.5%; /* Align to the right edge of the viewport */
+  left: 87.5%; 
   top: 46%;
 }
 
 .submitButtonContainer {
-  position: absolute; /* Change position to absolute */
-  top:100%; /* Adjust bottom value to change vertical position */
-  left: 50%; /* Center horizontally */
+  position: absolute; 
+  top:100%; 
+  left: 50%; 
 }
 
 .submitButton {
@@ -139,7 +139,7 @@
 }
 
 .linesContainer {
-  position: absolute; /* Set the position to absolute within the container */
+  position: absolute;
   top:0%;
   left:0%;
 }

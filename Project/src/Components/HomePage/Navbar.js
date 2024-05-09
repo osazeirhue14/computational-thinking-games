@@ -32,6 +32,10 @@ const Navbar = () => {
       route: "/Reviews", // Define the route for Reviews
     },
     {
+      text: "Sign In/Registration",
+      route: "/Login", // Define the route for Reviews
+    },
+    {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
       route: "/contact", // Define the route for Contact
@@ -51,7 +55,7 @@ const Navbar = () => {
         <Link to="/reviews" className="navbar-link">Reviews</Link>
         <Link to="/games" className="navbar-link">Games</Link>
         <Link to="/leaderboards" className="navbar-link">Leaderboards</Link>
-        <button className="primary-button" onclick={()=> navigate('Login')}>Sign In/Register</button>
+        <Link to="/login" className="primary-button">Sign In/Register</Link>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
