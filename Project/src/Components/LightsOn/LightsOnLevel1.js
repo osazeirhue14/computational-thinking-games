@@ -70,7 +70,8 @@ const LightsOnLevel1 = () => {
           <Line startX={634} startY={750} endX={634} endY={860} className="line" />
           <Line startX={300} startY={850} endX={975} endY={850} className="line" />
           <Line startX={974} startY={850} endX={974} endY={700} className="line" />
-
+          <Line startX={300} startY={990} endX={635} endY={990} className="line" />
+          <Line startX={300} startY={990} endX={635} endY={990} className="line" />
         </svg>
       <div className="gameContainer">
       

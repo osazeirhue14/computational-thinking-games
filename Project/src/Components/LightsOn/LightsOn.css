@@ -34,71 +34,70 @@
 .triangleShape {
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 30%;  /* Adjust this value as needed to position correctly */
-  transform: translate(-32%, -1100%);
+  position: absolute;
+  left: 28.45%;  /* Adjust this value as needed to position correctly */
+  top: 12%;
 }
 
 .squareShape {
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 25%;  /* Adjust this value as needed to position correctly */
-  transform: translate(-35%, -800%);
+  position: absolute;
+  left: 28.3%;
+  top: 36%;
 }
 
 .triangleShape2 {
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 20%;  /* Adjust this value as needed to position correctly */
-  top:50%;   /* Adjust this value as needed to position correctly */
-  transform: translate(-30%, -500%);
+  position: absolute;
+  left: 28.5%;  /* Adjust this value as needed to position correctly */
+  top: 58%;   /* Adjust this value as needed to position correctly */
 }
 
 .squareShape2 {
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 15%;  /* Adjust this value as needed to position correctly */
-  transform: translate(-30%, -200%);
+  position: absolute;
+  left: 28.3%;  /* Adjust this value as needed to position correctly */
+  top: 83%;
 }
 .triangleShape3 {
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 35%;  /* Adjust this value as needed to position correctly */
-  transform: translate(-110%, -950%);
+  position: absolute;
+  left: 49.3%;  /* Adjust this value as needed to position correctly */
+  top: 21%;
 }
 
 .squareShape3 {
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 30%;  /* Adjust this value as needed to position correctly */
-  transform: translate(-110%, -350%);
+  position: absolute;
+  left: 49%;  /* Adjust this value as needed to position correctly */
+  top:70%;
 }
 
 .triangleShape4 {
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 45%;  /* Adjust this value as needed to position correctly */
-  transform: translate(-110%, -650%);
+  position: absolute;
+  left: 68.95%;  /* Adjust this value as needed to position correctly */
+  top: 48%;
 }
 
 
 .lightBulb {
   width: 100px; /* Set width as needed */
   height: 100px; /* Set height as needed */
-  position: relative;
-  left: 60%; /* Align to the right edge of the viewport */
-  transform: translate(-110%, -520%); /* Adjust vertical alignment */
+  position: absolute;
+  left: 87.5%; /* Align to the right edge of the viewport */
+  top: 46%;
 }
 
 .submitButtonContainer {
-  position: relative; /* Change position to absolute */
-  bottom: 20px; /* Adjust bottom value to change vertical position */
+  position: absolute; /* Change position to absolute */
+  top:100%; /* Adjust bottom value to change vertical position */
   left: 50%; /* Center horizontally */
 }
 
