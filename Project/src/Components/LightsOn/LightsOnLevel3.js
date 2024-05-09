@@ -73,7 +73,7 @@ const LightsOnLevel1 = () => {
     <div>
 
       <div className="gameHeader">
-        <h1>Lights On Level 1</h1>
+        <h1>Lights On Level 3</h1>
         <p className="gameDescription">
           Beaver Sofia and her group of friends are playing a game called 'Lights On'.<br/><br/>
           The game has 8 large buttons which, when stood on, send a signal down a wire.<br/>
