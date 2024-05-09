@@ -10,7 +10,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { useNavigate } from "react-router-dom";
@@ -30,8 +29,7 @@ const Navbar = () => {
     },
     {
       text: "Reviews",
-      icon: <CommentRoundedIcon />,
-      route: "/reviews", // Define the route for Reviews
+      route: "/Reviews", // Define the route for Reviews
     },
     {
       text: "Contact",

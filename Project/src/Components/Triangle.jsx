@@ -1,10 +1,10 @@
 import React from 'react';
-import { ReactComponent as TriangleSvg } from '../Assets/Triangle.svg';
+import { ReactComponent as TriangleSvg } from '../assets/Triangle.svg';
 
 const Triangle = () => {
   return (
-    <div style={{ width: '50px', height: 'auto' }}>
-      <TriangleSvg className="Triangle" />
+    <div>
+      <Triangle className="Triangle" />
     </div>
   );
 }
