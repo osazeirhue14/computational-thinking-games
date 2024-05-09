@@ -33,7 +33,7 @@ const Navbar = () => {
     },
     {
       text: "Sign In/Registration",
-      route: "/Login", // Define the route for Reviews
+      route: "/Login", // Define the route for Login
     },
     {
       text: "Contact",
