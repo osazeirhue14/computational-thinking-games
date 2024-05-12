@@ -14,6 +14,8 @@ import LightsOnLevel3 from "./Components/LightsOn/LightsOnLevel3";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Reviews from "./Components/Reviews/Reviews";
 import Login from "./Login1";
+import Register from "./Register";
+import TandC from "./TandC";
 
 const Nav = () => {
   return (
@@ -95,6 +97,8 @@ const Nav = () => {
       <Route path="/testimonial" element={<Testimonial />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="Login" element={<Login />} />
+      <Route path="Register" element={<Register/>}/>
+      <Route path="TandC" element={<TandC/>}/>
     </Routes>
   );
 };

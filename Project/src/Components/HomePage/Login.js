@@ -1,6 +1,6 @@
 import React from 'react'
 import BannerBackground from "../../Assets/home-banner-background.png";
-import "./Login.css";
+//import "./Login.css";
 
 
 import { useState } from 'react'
@@ -15,76 +15,76 @@ import { FaFacebookF } from "react-icons/fa";
 
 
 
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+//import { getAnalytics } from "firebase/analytics";
+import { getAuth, signInWithEmailAndPassword }  from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCkSYy4F0LhEfVlUnQ7zY0cftTARaiefhc",
+  authDomain: "team-3-project-72aca.firebaseapp.com",
+  databaseURL: "https://team-3-project-72aca-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "team-3-project-72aca",
+  storageBucket: "team-3-project-72aca.appspot.com",
+  messagingSenderId: "547075046815",
+  appId: "1:547075046815:web:990b86e5f663c2604011aa",
+  measurementId: "G-23KFB5KCHN"
+};
+///
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+//const analytics = getAnalytics(app);
+const auth = getAuth();
 
 function Login() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [loggedIn, setLoggedIn] = useState(false);
-  const handleLogin = () => {
-    // For simplicity, let's just check if username and password are not empty
-    if (username !== '' && password !== '') {
-      // You can implement actual authentication logic here
-      setLoggedIn(true);
-    } else {
-      alert('Please enter username and password');
-    }
-  };
-  const handleLogout = () => {
-    setLoggedIn(false);
-    setUsername('');
-    setPassword('');
-  };
+   
+  
+
+  const submit = document.getElementById('submit');
+submit.addEventListener("click",function(event){
+    event.preventDefault()
+    const email = document.getElementById('email').value;
+const password = document.getElementById('password').value;
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed up 
+      const user = userCredential.user;
+      alert("Logging into Account...")
+      window.location.href="App.js";
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage)
+      // ..
+    });
+    
+  
+
+})
+
 
 
   return (
     <>
     
-    <p className="welcome">
-    Welcome to GameHub! Get ready to embark on exciting adventures and challenges. To access our vast collection of games, simply log in using your credentials. Once logged in, you'll unlock a world of entertainment and fun waiting for you. Let the gaming journey begin! Log into our games page now and let the fun begin!"
-    </p>
-    <div className="home-image-section">
-          <img src={BannerImage} alt="" />
-        </div> <div className="home-bannerImage-container">
-          <img src={BannerBackground} alt="" />
-        </div>
-
-      <div>
-      {loggedIn ? (
-        <div className="Welcome">
-          <h1>Welcome, {username}!</h1>
-          <button onClick={handleLogout}>Logout</button>
-        </div>
-      ) : (
-        <div>
-          <h1>Login</h1>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <br />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <br />
-          <button onClick={handleLogin}>Login</button>
-        </div>
-      )}
-    </div>
-    <div className="footer-logo-container">
-          <img src={Logo} alt="" />
-        </div>
-        <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
-        </div>
+    <form>
+                <h2>Sign In</h2>
+                <div className="form-group">
+                    <label htmlFor="email">Email:</label>
+                    <input type="text" id="email" name="email" required />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="password">Password:</label>
+                    <input type="password" id="password" name="password" required />
+                </div>
+                <button type="submit">Sign In</button>
+                <br />
+                <input type="reset" />
+            </form>
     </>
   )
 }

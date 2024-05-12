@@ -1,15 +1,12 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import React from 'react'
-import { useState } from 'react'
-import './App.css'
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+import { getAuth,  signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+import React from 'react';
+import { useState } from 'react';
+import './Login1.css';
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCkSYy4F0LhEfVlUnQ7zY0cftTARaiefhc",
   authDomain: "team-3-project-72aca.firebaseapp.com",
@@ -23,66 +20,65 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const auth = getAuth(app);
 
-
-
-function Login() {
-  const [username, setUsername] = useState('');
+function Login1() {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loggedIn, setLoggedIn] = useState(false);
-  const handleLogin = () => {
-    // For simplicity, let's just check if username and password are not empty
-    if (username !== '' && password !== '') {
-      // You can implement actual authentication logic here
-      setLoggedIn(true);
-    } else {
-      alert('Please enter username and password');
-    }
-  };
-  const handleLogout = () => {
-    setLoggedIn(false);
-    setUsername('');
-    setPassword('');
-  };
+  
 
+  const handleLogin = (event) => {
+    event.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        alert("Logging into Account...");
+        // Redirect or do something else
+        window.location.href = `/games?email=${email}`;
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+      });
+  };
+  const handleSignUp = () => {
+    // Redirect to Register.js
+    window.location.href=('/Register');
+  };
 
   return (
     <>
-    <p>
-    Welcome to GameHub! Get ready to embark on exciting adventures and challenges. To access our vast collection of games, simply log in using your credentials. Once logged in, you'll unlock a world of entertainment and fun waiting for you. Let the gaming journey begin! Log into our games page now and let the fun begin!"
-    </p>
+    <br></br>
+    <br></br>
+    <p id="welcome">Log into GamesHub, to challenge your computational thinking skills with some of the best games available? Sign in now to explore our diverse collection of engaging and thought-provoking games. If you don't have an account yet, don't worry! You can easily sign up using the button below and start your gaming adventure today.</p>
+    <div className="container">
+      <form>
+        <h2>Sign In</h2>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" name="password" required onChange={(e) => setPassword(e.target.value)} />
+        </div>
+        <button type="submit" onClick={handleLogin}>Sign In</button>
+        <br />
+        <input type="reset" />
+        <br></br>
+        <br></br>
+      </form>
       <div>
-      {loggedIn ? (
-        <div>
-          <h1>Welcome, {username}!</h1>
-          <button onClick={handleLogout}>Logout</button>
-        </div>
-      ) : (
-        <div>
-          <h1>Login</h1>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <br />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <br />
-          <button onClick={handleLogin}>Login</button>
-        </div>
-      )}
+      <p>Don't already have an account? Sign Up below!</p>
+      <br></br>
+      <button onClick={handleSignUp}>Sign Up</button>
+    </div>
     </div>
     </>
-  )
+    
+  );
 }
 
-
-export default Login
-
+export default Login1;

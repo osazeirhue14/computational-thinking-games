@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import BeaverPic from "../../Assets/BeaverPic.png";
 
+
 const Games = () => {
   const workInfoData = [
     {
@@ -19,9 +20,14 @@ const Games = () => {
       text: "Description",
     },
   ];
+  const queryParams = new URLSearchParams(window.location.search);
+  const email = queryParams.get('email');
 
   return (
+    
     <div className="work-section-wrapper">
+      <center><h1>Hello, {email}!</h1></center>
+      <br></br>
       <div className="work-section-top">
         <p className="primary-subheading">Games</p>
         <h1 className="primary-heading">Our Games</h1>
