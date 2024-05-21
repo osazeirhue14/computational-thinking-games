@@ -16,6 +16,8 @@ import Reviews from "./Components/Reviews/Reviews";
 import Login from "./Login1";
 import Register from "./Register";
 import TandC from "./TandC";
+import LeaveReview from "./Components/Reviews/LeaveReview";
+import StarRate from "./Components/Reviews/starRate";
 
 const Nav = () => {
   return (
@@ -99,6 +101,8 @@ const Nav = () => {
       <Route path="Login" element={<Login />} />
       <Route path="Register" element={<Register/>}/>
       <Route path="TandC" element={<TandC/>}/>
+      <Route path="LeaveReview" element={<LeaveReview/>}/>
+      <Route path="starRate" element={<StarRate/>}/>
     </Routes>
   );
 };

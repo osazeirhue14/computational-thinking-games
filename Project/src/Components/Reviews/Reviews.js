@@ -1,6 +1,9 @@
 import React from "react";
 import ProfilePic from "../../Assets/john-doe-image.jpg";
 import { AiFillStar } from "react-icons/ai";
+const leavesReview = () => {
+  window.location.href=('/LeaveReview');
+};
 
 const Testimonial = () => {
   return (
@@ -25,6 +28,8 @@ const Testimonial = () => {
           <AiFillStar />
         </div>
         <h2>John Doe</h2>
+        <p>Want to leave your review? Please do so by clicking the button below</p>
+        <button onClick={leavesReview}>Leave a Review</button>
       </div>
     </div>
   );
