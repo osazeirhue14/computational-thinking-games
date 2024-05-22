@@ -4,6 +4,26 @@ import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { Link } from "react-router-dom";
+//import TandC from "../../TandC";
+const goToTandC = (event) => {
+  window.location.href = '/TandC';
+};
+const goToPrivacyPolicy = (event) => {
+  window.location.href = '/PrivacyPolicy';
+};
+const goToAbout = (event) => {
+  window.location.href = '/About';
+};
+const goToReviews = (event) => {
+  window.location.href = '/Reviews';
+};
+const goToUserGuidelines = (event) => {
+  window.location.href = '/UserGuidelines';
+};
+const goToAcceptingCookies = (event) => {
+  window.location.href = '/AcceptingCookies';
+};
 
 const Footer = () => {
   return (
@@ -21,22 +41,40 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Qualtiy</span>
-          <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
-          <span>Testimonials</span>
-          <span>Work</span>
+          <span>
+          <Link onClick={goToAbout} to="TandC">About Us</Link>
+            </span>
+          <span>
+          <Link onClick={goToUserGuidelines} to="TandC">User Guidelines</Link>
+            </span>
+          <span>
+          <Link onClick={goToTandC} to="TandC">Accessibility</Link>
+            </span>
+          <span>
+          <Link onClick={goToReviews} to="TandC">Testimonials</Link>
+            </span>
+          <span>
+          <Link onClick={goToAcceptingCookies} to="TandC">Cookie settings</Link>
+            </span>
         </div>
         <div className="footer-section-columns">
-          <span>1111111111</span>
-          <span>GameHub@game.com</span>
-          <span>press@game.com</span>
-          <span>contact@game.com</span>
+          <span>
+            <a href="mailto:GameHub@game.com"  target="_blank" rel="noopener noreferrer">GameHub@game.com</a>
+          </span>
+          <span>
+          <a href="mailto:iqda@mu.ie"  target="_blank" rel="noopener noreferrer">iqda@mu.ie</a>
+            </span>
+          <span>
+          <a href="mailto:Maintenance@mu.ie"  target="_blank" rel="noopener noreferrer">Maintenance@mu.ie</a>
+            </span>
         </div>
         <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+        <span>
+          <Link onClick={goToTandC} to="TandC">Terms and Conditions</Link>
+        </span>
+          <span>
+          <Link onClick={goToPrivacyPolicy} to="Privacypolicy">Privacy Policy</Link>
+            </span>
         </div>
       </div>
     </div>

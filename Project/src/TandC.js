@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 const goToRegister = (event) => {
     window.location.href = '/Register';
+};
+const goToHome = (event) => {
+  window.location.href = '/';
 };
 
 function TandC() {
@@ -40,6 +43,8 @@ function TandC() {
       <p>By using our website, you agree to these terms and conditions. If you do not agree to these terms and conditions, you may not use our website.</p>
       <br></br>
       <button onClick={goToRegister}>Back to Register</button>
+      <br></br>
+      <button onClick={goToHome}>Back to Home</button>
       </center>
     </div>
   );

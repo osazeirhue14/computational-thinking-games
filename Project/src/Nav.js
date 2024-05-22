@@ -18,7 +18,9 @@ import Register from "./Register";
 import TandC from "./TandC";
 import LeaveReview from "./Components/Reviews/LeaveReview";
 import StarRate from "./Components/Reviews/starRate";
-
+import PrivacyPolicy from "./PrivacyPolicy";
+import UserGuidelines from "./UserGuidelines";
+import AcceptingCookies from "./AcceptingCookies";
 const Nav = () => {
   return (
     <Routes>
@@ -103,6 +105,10 @@ const Nav = () => {
       <Route path="TandC" element={<TandC/>}/>
       <Route path="LeaveReview" element={<LeaveReview/>}/>
       <Route path="starRate" element={<StarRate/>}/>
+      <Route path="PrivacyPolicy" element={<PrivacyPolicy/>}/>
+      <Route path="UserGuidelines" element={<UserGuidelines/>}/>
+<Route path="AcceptingCookies" element={<AcceptingCookies/>}/>
+
     </Routes>
   );
 };
