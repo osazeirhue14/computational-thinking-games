@@ -75,6 +75,10 @@ const LeaveReview = () => {
       </div>
       <div>
         <h2>Leave a Review below!</h2>
+        <br></br>
+        <br></br>
+        <h4>Star Rating/5:</h4>
+        <br></br>
         <div className="star-rating">
           {[...Array(5)].map((star, index) => {
             const currentRate = index + 1;
@@ -91,9 +95,11 @@ const LeaveReview = () => {
                   color={currentRate <= (rateColor || rating) ? "yellow" : "grey"}
                 />
               </label>
+        
             );
           })}
         </div>
+        <br></br>
         {submitted ? (
           <div>
             <p>Thank you for your review!</p>

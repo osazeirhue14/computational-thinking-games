@@ -13,7 +13,7 @@ const goToPrivacyPolicy = (event) => {
   window.location.href = '/PrivacyPolicy';
 };
 const goToAbout = (event) => {
-  window.location.href = '/About';
+  window.location.href = '/about-us';
 };
 const goToReviews = (event) => {
   window.location.href = '/Reviews';
@@ -22,7 +22,7 @@ const goToUserGuidelines = (event) => {
   window.location.href = '/UserGuidelines';
 };
 const goToAcceptingCookies = (event) => {
-  window.location.href = '/AcceptingCookies';
+  window.location.href = '/CookieConsent';
 };
 
 const Footer = () => {
