@@ -22,7 +22,7 @@ const goToUserGuidelines = (event) => {
   window.location.href = '/UserGuidelines';
 };
 const goToAcceptingCookies = (event) => {
-  window.location.href = '/CookieConsent';
+  window.location.href = '/cookies';
 };
 
 const Footer = () => {

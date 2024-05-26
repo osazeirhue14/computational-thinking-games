@@ -20,7 +20,7 @@ import LeaveReview from "./Components/Reviews/LeaveReview";
 import StarRate from "./Components/Reviews/starRate";
 import PrivacyPolicy from "./PrivacyPolicy";
 import UserGuidelines from "./UserGuidelines";
-import CookieConsent from "./CookieConsent";
+import Cookies from "./cookies";
 
 const Nav = () => {
   return (
@@ -110,7 +110,7 @@ const Nav = () => {
       <Route path="UserGuidelines" element={<UserGuidelines/>}/>
       
 
-<Route path="CookieConsent" element={<CookieConsent/>}/>
+<Route path="cookies" element={<Cookies/>}/>
 
     </Routes>
   );
