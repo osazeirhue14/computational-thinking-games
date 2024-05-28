@@ -7,6 +7,10 @@ const Games = () => {
   const workInfoData = [
     {
       image: BeaverPic,
+      title: "TicTacToe",
+    },
+    {
+      image: BeaverPic,
       title: "Lights On",
     },
     {
@@ -33,6 +37,9 @@ const Games = () => {
         <h1 className="primary-heading">Our Games</h1>
         <p className="primary-text">
           Choose from a variety of computational thinking games!
+        </p>
+        <p className="primary-text">
+          Try a classic game of TicTacToe with a friend as a warmup before going into some more challenging games!
         </p>
       </div>
       <div className="work-section-bottom">

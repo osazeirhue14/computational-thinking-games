@@ -21,6 +21,7 @@ import StarRate from "./Components/Reviews/starRate";
 import PrivacyPolicy from "./PrivacyPolicy";
 import UserGuidelines from "./UserGuidelines";
 import Cookies from "./cookies";
+import TicTacToe from "./Components/LightsOn/TicTacToe";
 
 const Nav = () => {
   return (
@@ -108,6 +109,7 @@ const Nav = () => {
       <Route path="starRate" element={<StarRate/>}/>
       <Route path="PrivacyPolicy" element={<PrivacyPolicy/>}/>
       <Route path="UserGuidelines" element={<UserGuidelines/>}/>
+      <Route path="TicTacToe" element={<TicTacToe/>}/>
       
 
 <Route path="cookies" element={<Cookies/>}/>
