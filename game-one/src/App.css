@@ -1,0 +1,44 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper {
+  margin-bottom: 20px;
+}
+
+/* Remove styles for regular button */
+/* .button {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border: 3px solid black;
+  border-radius: 50%;
+} */
+
+.Beaver {
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+/* Add styles for SVG button */
+ .Button {
+  width: 50px;
+  height: 50px;
+} 

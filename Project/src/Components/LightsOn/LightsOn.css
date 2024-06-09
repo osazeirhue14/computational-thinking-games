@@ -1,0 +1,150 @@
+.fixedContainer {
+  position: relative;
+  top: 50%;
+  left: -40%;
+  display: flex;          
+  flex-direction: column;  
+  align-items: center;     
+  gap: 1px;              
+}
+/*
+.fixedContainer {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;          
+  flex-direction: column;  
+  align-items: center;     
+  gap: 1px;               
+  width: 70px; 
+  height: 70px; 
+}
+*/
+
+
+.toggleButtonImg {
+  width: 100px; 
+  height: 100px; 
+  cursor: pointer;
+  display: block; 
+}
+
+.triangleShape {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 28.45%;  
+  top: 12%;
+}
+
+.squareShape {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 28.3%;
+  top: 36%;
+}
+
+.triangleShape2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 28.5%;
+  top: 58%;  
+}
+
+.squareShape2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 28.3%;  
+  top: 83%;
+}
+.triangleShape3 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 49.3%;  
+  top: 21%;
+}
+
+.squareShape3 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 49%;  
+  top:70%;
+}
+
+.triangleShape4 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 68.95%; 
+  top: 48%;
+}
+
+
+.lightBulb {
+  width: 100px; 
+  height: 100px; 
+  position: absolute;
+  left: 87.5%; 
+  top: 46%;
+}
+
+.submitButtonContainer {
+  position: absolute; 
+  top:100%; 
+  left: 50%; 
+}
+
+.submitButton {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submitButton:hover {
+  background-color: darkorange;
+}
+
+.gameHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gameHeader h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gameHeader p {
+  font-size: 16px;
+}
+.gameDescription {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.gameContainer {
+  position: relative;
+}
+
+.linesContainer {
+  position: absolute;
+  top:0%;
+  left:0%;
+}
+
+.line {
+  stroke: black;
+  stroke-width: 2;
+}
