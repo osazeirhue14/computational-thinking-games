@@ -22,6 +22,7 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import UserGuidelines from "./UserGuidelines";
 import Cookies from "./cookies";
 import TicTacToe from "./Components/LightsOn/TicTacToe";
+import InGame from "./Components/LightsOn/InGame";
 
 const Nav = () => {
   return (
@@ -110,6 +111,7 @@ const Nav = () => {
       <Route path="PrivacyPolicy" element={<PrivacyPolicy/>}/>
       <Route path="UserGuidelines" element={<UserGuidelines/>}/>
       <Route path="TicTacToe" element={<TicTacToe/>}/>
+      <Route path="InGame" element={<InGame/>}/>
       
 
 <Route path="cookies" element={<Cookies/>}/>

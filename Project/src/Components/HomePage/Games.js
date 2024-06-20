@@ -15,8 +15,8 @@ const Games = () => {
     },
     {
       image: BeaverPic,
-      title: "Game 2",
-      text: "Description",
+      title: "InGame",
+      
     },
     {
       image: BeaverPic,
