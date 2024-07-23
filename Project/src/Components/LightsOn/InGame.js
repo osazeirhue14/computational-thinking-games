@@ -386,7 +386,7 @@ const InGame = () => {
             disabled={isButtonDisabled}
             ref={button2}
           >
-            2
+            
           </button>
           <button
             id="2"

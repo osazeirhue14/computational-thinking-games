@@ -20,8 +20,8 @@ const Games = () => {
     },
     {
       image: BeaverPic,
-      title: "Game 3",
-      text: "Description",
+      title: "MissInfinity",
+      
     },
   ];
   const queryParams = new URLSearchParams(window.location.search);
