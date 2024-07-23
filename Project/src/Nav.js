@@ -24,6 +24,7 @@ import Cookies from "./cookies";
 import TicTacToe from "./Components/LightsOn/TicTacToe";
 import InGame from "./Components/LightsOn/InGame";
 import MissInfinity from "./Components/LightsOn/MissInfinity";
+import Lists from "./Components/LightsOn/Lists";
 
 const Nav = () => {
   return (
@@ -114,6 +115,7 @@ const Nav = () => {
       <Route path="TicTacToe" element={<TicTacToe/>}/>
       <Route path="InGame" element={<InGame/>}/>
       <Route path="MissInfinity" element={<MissInfinity/>}/>
+      <Route path="Lists" element={<Lists/>}/>
       
 
 <Route path="cookies" element={<Cookies/>}/>
