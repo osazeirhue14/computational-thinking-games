@@ -25,7 +25,17 @@ const Games = () => {
     },
     {
       image: BeaverPic,
+      title: "SailorNecklace",
+      
+    },
+    {
+      image: BeaverPic,
       title: "Lists",
+      
+    },
+    {
+      image: BeaverPic,
+      title: "HeartGraphics",
       
     },
   ];

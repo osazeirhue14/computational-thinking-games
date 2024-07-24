@@ -8,9 +8,6 @@ import Testimonial from "./Components/HomePage/Testimonial";
 import Contact from "./Components/HomePage/Contact";
 import Footer from "./Components/HomePage/Footer";
 import LightsOn from "./Components/LightsOn/LightsOn"; 
-import LightsOnLevel1 from "./Components/LightsOn/LightsOnLevel1";
-import LightsOnLevel2 from "./Components/LightsOn/LightsOnLevel2";
-import LightsOnLevel3 from "./Components/LightsOn/LightsOnLevel3";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Reviews from "./Components/Reviews/Reviews";
 import Login from "./Login1";
@@ -25,6 +22,8 @@ import TicTacToe from "./Components/LightsOn/TicTacToe";
 import InGame from "./Components/LightsOn/InGame";
 import MissInfinity from "./Components/LightsOn/MissInfinity";
 import Lists from "./Components/LightsOn/Lists";
+import SailorNecklace from "./Components/SailorNecklace/SailorNecklace";
+import HeartGraphics from "./Components/HeartGraphics/HeartGraphics";
 
 const Nav = () => {
   return (
@@ -72,37 +71,15 @@ const Nav = () => {
           </>
         }
       />
-      <Route path="/LightsOn" element={<LightsOn />} />
-      <Route
-        path="/LightsOnLevel1"
-        element={
-          <>
-            <NavBar />
-            <LightsOnLevel1 />
-            <Footer />
-          </>
-        }
+      <Route path="/LightsOn" element={
+      <>
+      <NavBar />
+      <LightsOn/>
+      <Footer />
+    </>
+      } 
       />
-      <Route
-        path="/LightsOnLevel2"
-        element={
-          <>
-            <NavBar />
-            <LightsOnLevel2 />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/LightsOnLevel3"
-        element={
-          <>
-            <NavBar />
-            <LightsOnLevel3 />
-            <Footer />
-          </>
-        }
-      />
+      
       <Route path="/testimonial" element={<Testimonial />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="Login" element={<Login />} />
@@ -112,10 +89,37 @@ const Nav = () => {
       <Route path="starRate" element={<StarRate/>}/>
       <Route path="PrivacyPolicy" element={<PrivacyPolicy/>}/>
       <Route path="UserGuidelines" element={<UserGuidelines/>}/>
-      <Route path="TicTacToe" element={<TicTacToe/>}/>
+      <Route path="TicTacToe" element={
+      <>
+      <NavBar />
+      <TicTacToe/>
+      <Footer />
+    </>}/>
       <Route path="InGame" element={<InGame/>}/>
-      <Route path="MissInfinity" element={<MissInfinity/>}/>
-      <Route path="Lists" element={<Lists/>}/>
+      <Route path="MissInfinity" element={
+      <>
+      <NavBar />
+      <MissInfinity/>
+      <Footer />
+    </>}/>
+      <Route path="Lists" element={
+      <>
+      <NavBar />
+      <Lists/>
+      <Footer />
+    </>}/>
+    <Route path="SailorNecklace" element={
+      <>
+      <NavBar />
+      <SailorNecklace/>
+      <Footer />
+    </>}/>
+    <Route path="HeartGraphics" element={
+      <>
+      <NavBar />
+      <HeartGraphics/>
+      <Footer />
+    </>}/>
       
 
 <Route path="cookies" element={<Cookies/>}/>

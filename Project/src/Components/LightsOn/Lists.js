@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Num1 from "../../Assets/Num1.png";
 import Num2 from "../../Assets/Num2.png";
 import Styles from "./Lists.module.css";
-import Navbar from "../HomePage/Navbar";
 
 const Lists = () => {
   const [message, setMessage] = useState("");
@@ -29,7 +28,6 @@ const Lists = () => {
 
   return (
     <div className={Styles.container}>
-      <Navbar />
       <h1 className={Styles.heading}>Lists</h1>
       <div className={Styles.content}>
         <div className={Styles.explanation}>

@@ -5,7 +5,6 @@ import ex2 from "../../Assets/ex2.png";
 import ex3 from "../../Assets/ex3.png";
 import ex4 from "../../Assets/ex4.png";
 import Styles from "./MissInfinity.module.css";
-import Navbar from "../HomePage/Navbar";
 
 const MissInfinity = () => {
   const [message, setMessage] = useState("");
@@ -42,7 +41,6 @@ const MissInfinity = () => {
 
   return (
     <div className={Styles.container}>
-      <Navbar />
       <h1 className={Styles.heading}>Miss Infinity</h1>
       <div className={Styles.content}>
         <div className={Styles.explanation}>
