@@ -65,10 +65,16 @@ const Games = () => {
       
     },
     {
+      image: encryption,
+      title: "Maze",
+      
+    },
+    {
       image: BeaverPic,
       title: "hi",
       
     }
+    
   ];
   const queryParams = new URLSearchParams(window.location.search);
   const email = queryParams.get('email');

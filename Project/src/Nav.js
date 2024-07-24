@@ -24,6 +24,7 @@ import MissInfinity from "./Components/LightsOn/MissInfinity";
 import Lists from "./Components/LightsOn/Lists";
 import SailorNecklace from "./Components/SailorNecklace/SailorNecklace";
 import HeartGraphics from "./Components/HeartGraphics/HeartGraphics";
+import Maze from "./Components/LightsOn/Maze";
 
 const Nav = () => {
   return (
@@ -104,6 +105,12 @@ const Nav = () => {
       <>
       <NavBar />
       <MissInfinity/>
+      <Footer />
+    </>}/>
+    <Route path="Maze" element={
+      <>
+      <NavBar />
+      <Maze/>
       <Footer />
     </>}/>
       <Route path="Lists" element={
