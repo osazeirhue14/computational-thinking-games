@@ -19,7 +19,7 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import UserGuidelines from "./UserGuidelines";
 import Cookies from "./cookies";
 import TicTacToe from "./Components/LightsOn/TicTacToe";
-import InGame from "./Components/LightsOn/InGame";
+import ConnectFour from "./Components/LightsOn/InGame";
 import MissInfinity from "./Components/LightsOn/MissInfinity";
 import Lists from "./Components/LightsOn/Lists";
 import SailorNecklace from "./Components/SailorNecklace/SailorNecklace";
@@ -91,11 +91,15 @@ const Nav = () => {
       <Route path="UserGuidelines" element={<UserGuidelines/>}/>
       <Route path="TicTacToe" element={
       <>
-      <NavBar />
       <TicTacToe/>
       <Footer />
     </>}/>
-      <Route path="InGame" element={<InGame/>}/>
+    <Route path="ConnectFour" element={
+      <>
+      <NavBar />
+      <ConnectFour/>
+      <Footer />
+    </>}/>
       <Route path="MissInfinity" element={
       <>
       <NavBar />

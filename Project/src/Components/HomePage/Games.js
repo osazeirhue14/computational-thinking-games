@@ -1,43 +1,74 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import BeaverPic from "../../Assets/BeaverPic.png";
+import TicTacToe from "../../Assets/TicTacToePic.png";
+import Heart from "../../Assets/HeartPic.png";
+import Connect from "../../Assets/ConnectFour.png";
+import Math from "../../Assets/Calculator.png";
+import Abacus from "../../Assets/abacus.png";
+import Sailor from "../../Assets/SailorPic.png";
+import Beaver from "../../Assets/BeaverPic2.png";
+import NutsAndBolts from "../../Assets/NutsAndBolts.png";
+import sewingmachine from "../../Assets/sewingmachine.png";
+import encryption from "../../Assets/encryption.png";
+
 
 
 const Games = () => {
   const workInfoData = [
     {
-      image: BeaverPic,
+      image: TicTacToe,
       title: "TicTacToe",
     },
     {
-      image: BeaverPic,
+      image: Beaver,
       title: "Lights On",
     },
     {
-      image: BeaverPic,
-      title: "InGame",
+      image: Connect,
+      title: "Connect Four",
       
     },
     {
-      image: BeaverPic,
-      title: "MissInfinity",
+      image: Abacus,
+      title: "Miss Infinity",
       
     },
     {
-      image: BeaverPic,
-      title: "SailorNecklace",
+      image: Sailor,
+      title: "Sailor Necklace",
       
     },
     {
-      image: BeaverPic,
+      image: Math,
       title: "Lists",
       
     },
     {
-      image: BeaverPic,
-      title: "HeartGraphics",
+      image: Heart,
+      title: "Heart Graphics",
       
     },
+    {
+      image: NutsAndBolts,
+      title: "Nuts and Bolts",
+      
+    },
+    {
+      image: sewingmachine,
+      title: "Sewing Machine",
+      
+    },
+    {
+      image: encryption,
+      title: "Cipher 8",
+      
+    },
+    {
+      image: BeaverPic,
+      title: "hi",
+      
+    }
   ];
   const queryParams = new URLSearchParams(window.location.search);
   const email = queryParams.get('email');
