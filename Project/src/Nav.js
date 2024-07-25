@@ -25,7 +25,10 @@ import Lists from "./Components/LightsOn/Lists";
 import SailorNecklace from "./Components/SailorNecklace/SailorNecklace";
 import HeartGraphics from "./Components/HeartGraphics/HeartGraphics";
 import Maze from "./Components/LightsOn/Maze";
-
+import NutsandBolts from "./Components/NutsandBolts/NutsandBolts";
+import SewingMachine from "./Components/SewingMachine/SewingMachine";
+import Cipher8 from "./Components/Cipher8/Cipher8";
+import FavouriteGem from "./Components/FavouriteGem/FavouriteGem";
 const Nav = () => {
   return (
     <Routes>
@@ -131,8 +134,30 @@ const Nav = () => {
       <HeartGraphics/>
       <Footer />
     </>}/>
-      
-
+    <Route path="NutsandBolts" element={
+      <>
+      <NavBar />
+      <NutsandBolts/>
+      <Footer />
+    </>}/>
+    <Route path="SewingMachine" element={
+      <>
+      <NavBar />
+      <SewingMachine/>
+      <Footer />
+    </>}/>
+    <Route path="Cipher8" element={
+      <>
+      <NavBar />
+      <Cipher8/>
+      <Footer />
+    </>}/>
+    <Route path="FavouriteGem" element={
+      <>
+      <NavBar />
+      <FavouriteGem/>
+      <Footer />
+    </>}/>
 <Route path="cookies" element={<Cookies/>}/>
 
     </Routes>

@@ -1,0 +1,47 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="500"  height="125" >
+  <g transform="matrix(0.207187, 0, 0, 0.207187, 82.552216, 0.710364)" style="">
+    <polygon style="fill: rgb(190, 73, 73);" points="0,156 232,428 128.889,156 &#9;"/>
+    <polygon style="fill: rgb(255, 154, 154);" points="335.111,156 232,428 464,156 &#9;"/>
+    <polygon style="fill: rgb(251, 197, 197);" points="232,156 335.111,156 232,36 128.889,156 &#9;"/>
+    <polygon style="fill: rgb(248, 111, 111);" points="232,156 128.889,156 232,428 335.111,156 &#9;"/>
+    <polygon style="fill: rgb(225, 67, 67);" points="104,36 0,156 128.889,156 &#9;"/>
+    <polygon style="fill: rgb(251, 197, 197);" points="464,156 360,36 335.111,156 &#9;"/>
+    <polygon style="fill: rgb(248, 111, 111);" points="360,36 232,36 335.111,156 &#9;"/>
+    <polygon style="fill: rgb(248, 111, 111);" points="232,36 104,36 128.889,156 &#9;"/>
+  </g>
+  <g transform="matrix(0, 0.179555, -0.205923, 0, 67.784439, 8.169097)" style="">
+    <polygon style="fill: rgb(197, 207, 251);" points="232,156 335.111,156 232,36 128.889,156 &#9;"/>
+    <polygon style="fill: rgb(67, 91, 225);" points="104,36 0,156 128.889,156 &#9;"/>
+    <polygon style="fill: rgb(154, 184, 255);" points="464,156 360,36 335.111,156 &#9;"/>
+    <polygon style="fill: rgb(111, 141, 248);" points="360,36 232,36 335.111,156 &#9;"/>
+    <polygon style="fill: rgb(111, 141, 248);" points="232,36 104,36 128.889,156 &#9;"/>
+    <polygon style="fill: rgb(154, 184, 255);" points="232 274.88 335.111 274.88 232 154.88 128.889 274.88" transform="matrix(-1, 0, 0, -1, 464, 429.76001)"/>
+    <polygon style="fill: rgb(67, 91, 225);" points="439.111 154.88 335.111 274.88 464 274.88" transform="matrix(-1, 0, 0, -1, 799.110992, 429.76001)"/>
+    <polygon style="fill: rgb(73, 98, 190);" points="128.889 274.88 24.889 154.88 0 274.88" transform="matrix(-1, 0, 0, -1, 128.889008, 429.76001)"/>
+    <polygon style="fill: rgb(111, 152, 248);" points="232 154.88 104 154.88 207.111 274.88" transform="matrix(-1, 0, 0, -1, 336, 429.76001)"/>
+    <polygon style="fill: rgb(111, 152, 248);" points="360 154.88 232 154.88 256.889 274.88" transform="matrix(-1, 0, 0, -1, 592, 429.76001)"/>
+  </g>
+  <g transform="matrix(-0.188906, 0, 0, -0.216647, 393.585052, 70.577477)" style="">
+    <polygon style="fill: rgb(67, 201, 225);" points="232 47.627 335.111 47.627 232 -72.373 128.889 47.627"/>
+    <polygon style="fill: rgb(67, 201, 225);" points="104 -72.373 0 47.627 128.889 47.627"/>
+    <polygon style="fill: rgb(67, 201, 225);" points="464 47.627 360 -72.373 335.111 47.627"/>
+    <polygon style="fill: rgb(111, 225, 248);" points="360 -72.373 232 -72.373 335.111 47.627"/>
+    <polygon style="fill: rgb(111, 225, 248);" points="232 -72.373 104 -72.373 128.889 47.627"/>
+    <polygon style="fill: rgb(154, 238, 255);" points="232 274.88 335.111 274.88 232 154.88 128.889 274.88" transform="matrix(-1, 0, 0, -1, 464, 429.76001)"/>
+    <polygon style="fill: rgb(67, 201, 225);" points="439.111 154.88 335.111 274.88 464 274.88" transform="matrix(-1, 0, 0, -1, 799.110992, 429.76001)"/>
+    <polygon style="fill: rgb(73, 164, 190);" points="128.889 274.88 24.889 154.88 0 274.88" transform="matrix(-1, 0, 0, -1, 128.889008, 429.76001)"/>
+    <polygon style="fill: rgb(111, 225, 248);" points="232 154.88 104 154.88 207.111 274.88" transform="matrix(-1, 0, 0, -1, 336, 429.76001)"/>
+    <polygon style="fill: rgb(111, 225, 248);" points="360 154.88 232 154.88 256.889 274.88" transform="matrix(-1, 0, 0, -1, 592, 429.76001)"/>
+    <rect x="839.353" y="864.626" width="108.548" height="204.711" style="fill: rgb(197, 251, 251);" transform="matrix(0, -1, 1, 0, -735.39856, 994.485962)"/>
+    <rect x="-839.353" y="864.626" width="108.548" height="128.179" style="fill: rgb(111, 225, 248);" transform="matrix(0, -1, -1, 0, 993.853472, -684.21907)"/>
+    <rect x="-839.353" y="1197.516" width="108.548" height="128.179" style="fill: rgb(111, 225, 248);" transform="matrix(0, -1, -1, 0, 1659.63312, -684.21907)"/>
+  </g>
+  <g transform="matrix(0, 0.175037, -0.175037, 0, 269.302521, 8.169097)" style="">
+    <polygon style="fill: rgb(77, 190, 73);" points="0,156 232,428 128.889,156 &#9;"/>
+    <polygon style="fill: rgb(154, 255, 156);" points="335.111,156 232,428 464,156 &#9;"/>
+    <polygon style="fill: rgb(111, 248, 122);" points="232,156 128.889,156 232,428 335.111,156 &#9;"/>
+    <polygon style="fill: rgb(111, 248, 122);" points="232 -115.64 464 156.36 360.889 -115.64" transform="matrix(-1, 0, 0, -1, 696, 40.720001)"/>
+    <polygon style="fill: rgb(99, 225, 67);" points="103.111 -115.64 0 156.36 232 -115.64" transform="matrix(-1, 0, 0, -1, 232, 40.720001)"/>
+    <polygon style="fill: rgb(199, 251, 197);" points="232 -115.64 128.889 -115.64 232 156.36 335.111 -115.64" transform="matrix(-1, 0, 0, -1, 464, 40.720001)"/>
+  </g>
+</svg>

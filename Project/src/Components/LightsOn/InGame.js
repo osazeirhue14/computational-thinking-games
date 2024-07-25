@@ -342,15 +342,6 @@ const InGame = () => {
   return (
     
     <div className={Styles.inGameContainer}>
-      <nav className={Styles.inGameNav}>
-        <button className={Styles.link} onClick={() => navigate("/games")}>
-          MENU
-        </button>
-        
-        <button className={Styles.link} onClick={handleRestart}>
-          RESTART
-        </button>
-      </nav>
       <img
         src={!turn ? YellowMarker : RedMarker}
         className={Styles.marker}

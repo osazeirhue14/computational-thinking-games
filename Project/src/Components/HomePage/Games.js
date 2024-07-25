@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import BeaverPic from "../../Assets/BeaverPic.png";
 import TicTacToe from "../../Assets/TicTacToePic.png";
 import Heart from "../../Assets/HeartPic.png";
 import Connect from "../../Assets/ConnectFour.png";
@@ -11,6 +10,8 @@ import Beaver from "../../Assets/BeaverPic2.png";
 import NutsAndBolts from "../../Assets/NutsAndBolts.png";
 import sewingmachine from "../../Assets/sewingmachine.png";
 import encryption from "../../Assets/encryption.png";
+import MazePic from "../../Assets/MazePic.png";
+import GemPic from "../../Assets/GemPic.png";
 
 
 
@@ -65,13 +66,13 @@ const Games = () => {
       
     },
     {
-      image: encryption,
+      image: MazePic,
       title: "Maze",
       
     },
     {
-      image: BeaverPic,
-      title: "hi",
+      image: GemPic,
+      title: "Favourite Gem",
       
     }
     
